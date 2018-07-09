@@ -1,16 +1,16 @@
 #%%
 """
-read csv file
+read daily engagement csv file
 """
 #%%
 import unicodecsv
 
-enrollments = []
+daily_engagement = []
 with open('daily_engagement.csv','rb') as f:
      reader = unicodecsv.DictReader(f)
-     enrollments=list(reader)
+     daily_engagement=list(reader)
 
 print(' ')
-enrollments[0]
-enrollments[1]
-#%%  
+daily_engagement[0]
+
+#%% 
